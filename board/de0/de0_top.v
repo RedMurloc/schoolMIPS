@@ -107,9 +107,9 @@ module de0_top
     wire [ 31:0 ] h7segment = regData;
 
     assign HEX0_DP = 1'b1;
-    assign HEX0_DP = 1'b1;
-    assign HEX0_DP = 1'b1;
-    assign HEX0_DP = 1'b1;
+    assign HEX1_DP = 1'b1;
+    assign HEX2_DP = 1'b1;
+    assign HEX3_DP = 1'b1;
 
     sm_hex_display digit_3 ( h7segment [15:12] , HEX3_D [6:0] );
     sm_hex_display digit_2 ( h7segment [11: 8] , HEX2_D [6:0] );
